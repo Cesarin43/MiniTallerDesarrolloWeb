@@ -74,7 +74,7 @@ const ReservasList = ({ reservas, setReservas }) => {
                 <button onClick={() => setEditingReserva(null)}>Cancelar</button>
               </div>
             ) : (
-              <div>
+              <div  class="boton-container">
                 {reserva.nombre} - {reserva.numeroPersonas} personas - {reserva.fecha} {reserva.hora} - {reserva.estado}
                 <button onClick={() => handleEditClick(reserva)}>Editar</button>
                 <button onClick={() => handleDelete(reserva.id)}>Eliminar</button>

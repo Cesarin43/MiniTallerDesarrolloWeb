@@ -1,4 +1,4 @@
-/* Estilo general */
+/* Color general */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -11,7 +11,6 @@ body {
   background-color: #f4f4f4;
 }
 
-/* Contenedor principal */
 .container {
   background-color: white;
   padding: 20px;
@@ -36,7 +35,13 @@ form {
   gap: 10px;
 }
 
-/* Inputs y selectores */
+/* espacio entre botones*/ 
+.boton-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px; 
+}
+
 input[type="text"], input[type="date"], select {
   padding: 10px;
   font-size: 1em;
@@ -46,7 +51,6 @@ input[type="text"], input[type="date"], select {
   box-sizing: border-box;
 }
 
-/* Botón de crear reserva */
 button {
   padding: 10px 20px;
   background-color: #4CAF50; 
@@ -62,7 +66,6 @@ button:hover {
   background-color: #45a049; 
 }
 
-/* Estilo de la lista de reservas */
 .reservas {
   margin-top: 20px;
   text-align: left;
@@ -87,7 +90,6 @@ button:hover {
 .reservas .eliminar:hover {
   background-color: #ff1a1a;
 }
-
 
 @media (max-width: 600px) {
   .container {
